@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05322FE32023948500B85841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05322FE22023948500B85841 /* AppDelegate.swift */; };
+		05322FE52023948500B85841 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05322FE42023948500B85841 /* TeamsViewController.swift */; };
+		05322FE82023948500B85841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05322FE62023948500B85841 /* Main.storyboard */; };
+		05322FEA2023948500B85841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05322FE92023948500B85841 /* Assets.xcassets */; };
+		05322FED2023948500B85841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05322FEB2023948500B85841 /* LaunchScreen.storyboard */; };
+		05322FF5202394F900B85841 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05322FF4202394F900B85841 /* PlayersViewController.swift */; };
+		05322FF92023A70800B85841 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05322FF82023A70800B85841 /* NetworkManager.swift */; };
+		05322FFC2023A83F00B85841 /* ApisUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05322FFB2023A83F00B85841 /* ApisUrl.swift */; };
+		05322FFE2023AD1B00B85841 /* TeamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05322FFD2023AD1B00B85841 /* TeamsModel.swift */; };
+		053230012023DC3100B85841 /* SVGToPNGConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053230002023DC3100B85841 /* SVGToPNGConverter.swift */; };
+		05383EB720250B1D00E5D467 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05383EB620250B1D00E5D467 /* PlayersModel.swift */; };
+		05383EBA2025216200E5D467 /* RealmTeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05383EB92025216200E5D467 /* RealmTeamModel.swift */; };
+		05383EBC202521A700E5D467 /* RealmPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05383EBB202521A700E5D467 /* RealmPlayerModel.swift */; };
+		05383EBE202525A400E5D467 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05383EBD202525A400E5D467 /* RealmHelper.swift */; };
+		05383EC120252E3600E5D467 /* TeamsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05383EC020252E3600E5D467 /* TeamsCell.swift */; };
+		05383EC320252E8900E5D467 /* PlayersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05383EC220252E8900E5D467 /* PlayersCell.swift */; };
+		055D44332025F5D700D6CBF7 /* Activity Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D44322025F5D700D6CBF7 /* Activity Indicator.swift */; };
+		055D44352025F72900D6CBF7 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D44342025F72900D6CBF7 /* Extentions.swift */; };
+		055D44372025F84500D6CBF7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D44362025F84500D6CBF7 /* Utils.swift */; };
+		C5EF73E991D7C52A1540716C /* Pods_BundesligaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613F8B502A4432119CA1E867 /* Pods_BundesligaApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05322FDF2023948500B85841 /* BundesligaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BundesligaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05322FE22023948500B85841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05322FE42023948500B85841 /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
+		05322FE72023948500B85841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05322FE92023948500B85841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05322FEC2023948500B85841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05322FEE2023948500B85841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05322FF4202394F900B85841 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		05322FF82023A70800B85841 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		05322FFB2023A83F00B85841 /* ApisUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApisUrl.swift; sourceTree = "<group>"; };
+		05322FFD2023AD1B00B85841 /* TeamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsModel.swift; sourceTree = "<group>"; };
+		053230002023DC3100B85841 /* SVGToPNGConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGToPNGConverter.swift; sourceTree = "<group>"; };
+		05383EB620250B1D00E5D467 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
+		05383EB92025216200E5D467 /* RealmTeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTeamModel.swift; sourceTree = "<group>"; };
+		05383EBB202521A700E5D467 /* RealmPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPlayerModel.swift; sourceTree = "<group>"; };
+		05383EBD202525A400E5D467 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		05383EC020252E3600E5D467 /* TeamsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCell.swift; sourceTree = "<group>"; };
+		05383EC220252E8900E5D467 /* PlayersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCell.swift; sourceTree = "<group>"; };
+		055D44322025F5D700D6CBF7 /* Activity Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity Indicator.swift"; sourceTree = "<group>"; };
+		055D44342025F72900D6CBF7 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		055D44362025F84500D6CBF7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		613F8B502A4432119CA1E867 /* Pods_BundesligaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BundesligaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A532E48975C813AC8EC81007 /* Pods-BundesligaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BundesligaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BundesligaApp/Pods-BundesligaApp.release.xcconfig"; sourceTree = "<group>"; };
+		BE86AE559EE68D563215D7F1 /* Pods-BundesligaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BundesligaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BundesligaApp/Pods-BundesligaApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05322FDC2023948500B85841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF73E991D7C52A1540716C /* Pods_BundesligaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05322FD62023948500B85841 = {
+			isa = PBXGroup;
+			children = (
+				05322FE12023948500B85841 /* BundesligaApp */,
+				05322FE02023948500B85841 /* Products */,
+				0D47DB966788ACF772F5DB75 /* Pods */,
+				F06ABE6B6599F97440236611 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05322FE02023948500B85841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05322FDF2023948500B85841 /* BundesligaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05322FE12023948500B85841 /* BundesligaApp */ = {
+			isa = PBXGroup;
+			children = (
+				055D44312025F5BE00D6CBF7 /* Utils */,
+				05383EBF20252E2800E5D467 /* Table Cells */,
+				05383EB820251F5B00E5D467 /* Realm Helper */,
+				05322FFF2023DC0B00B85841 /* SVG to PNG  */,
+				05322FFA2023A7F200B85841 /* Views */,
+				05322FF72023A6E800B85841 /* Network Manager */,
+				05322FF620239E4A00B85841 /* Models */,
+				05322FE22023948500B85841 /* AppDelegate.swift */,
+				05322FE62023948500B85841 /* Main.storyboard */,
+				05322FE92023948500B85841 /* Assets.xcassets */,
+				05322FEB2023948500B85841 /* LaunchScreen.storyboard */,
+				05322FEE2023948500B85841 /* Info.plist */,
+			);
+			path = BundesligaApp;
+			sourceTree = "<group>";
+		};
+		05322FF620239E4A00B85841 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05322FFD2023AD1B00B85841 /* TeamsModel.swift */,
+				05383EB620250B1D00E5D467 /* PlayersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05322FF72023A6E800B85841 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				05322FF82023A70800B85841 /* NetworkManager.swift */,
+				05322FFB2023A83F00B85841 /* ApisUrl.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		05322FFA2023A7F200B85841 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05322FE42023948500B85841 /* TeamsViewController.swift */,
+				05322FF4202394F900B85841 /* PlayersViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05322FFF2023DC0B00B85841 /* SVG to PNG  */ = {
+			isa = PBXGroup;
+			children = (
+				053230002023DC3100B85841 /* SVGToPNGConverter.swift */,
+			);
+			path = "SVG to PNG ";
+			sourceTree = "<group>";
+		};
+		05383EB820251F5B00E5D467 /* Realm Helper */ = {
+			isa = PBXGroup;
+			children = (
+				05383EB92025216200E5D467 /* RealmTeamModel.swift */,
+				05383EBB202521A700E5D467 /* RealmPlayerModel.swift */,
+				05383EBD202525A400E5D467 /* RealmHelper.swift */,
+			);
+			path = "Realm Helper";
+			sourceTree = "<group>";
+		};
+		05383EBF20252E2800E5D467 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				05383EC020252E3600E5D467 /* TeamsCell.swift */,
+				05383EC220252E8900E5D467 /* PlayersCell.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		055D44312025F5BE00D6CBF7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				055D44322025F5D700D6CBF7 /* Activity Indicator.swift */,
+				055D44342025F72900D6CBF7 /* Extentions.swift */,
+				055D44362025F84500D6CBF7 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0D47DB966788ACF772F5DB75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE86AE559EE68D563215D7F1 /* Pods-BundesligaApp.debug.xcconfig */,
+				A532E48975C813AC8EC81007 /* Pods-BundesligaApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F06ABE6B6599F97440236611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				613F8B502A4432119CA1E867 /* Pods_BundesligaApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05322FDE2023948500B85841 /* BundesligaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05322FF12023948500B85841 /* Build configuration list for PBXNativeTarget "BundesligaApp" */;
+			buildPhases = (
+				C60C62F0CF4DA90C9741880E /* [CP] Check Pods Manifest.lock */,
+				05322FDB2023948500B85841 /* Sources */,
+				05322FDC2023948500B85841 /* Frameworks */,
+				05322FDD2023948500B85841 /* Resources */,
+				355E12F4A2424862E03A4A95 /* [CP] Embed Pods Frameworks */,
+				AB832BF168AE6172D717527D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BundesligaApp;
+			productName = BundesligaApp;
+			productReference = 05322FDF2023948500B85841 /* BundesligaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05322FD72023948500B85841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Rami;
+				TargetAttributes = {
+					05322FDE2023948500B85841 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 05322FDA2023948500B85841 /* Build configuration list for PBXProject "BundesligaApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05322FD62023948500B85841;
+			productRefGroup = 05322FE02023948500B85841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05322FDE2023948500B85841 /* BundesligaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05322FDD2023948500B85841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05322FED2023948500B85841 /* LaunchScreen.storyboard in Resources */,
+				05322FEA2023948500B85841 /* Assets.xcassets in Resources */,
+				05322FE82023948500B85841 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		355E12F4A2424862E03A4A95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BundesligaApp/Pods-BundesligaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB832BF168AE6172D717527D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BundesligaApp/Pods-BundesligaApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C60C62F0CF4DA90C9741880E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05322FDB2023948500B85841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05322FF92023A70800B85841 /* NetworkManager.swift in Sources */,
+				05322FFC2023A83F00B85841 /* ApisUrl.swift in Sources */,
+				055D44352025F72900D6CBF7 /* Extentions.swift in Sources */,
+				05322FFE2023AD1B00B85841 /* TeamsModel.swift in Sources */,
+				05322FE52023948500B85841 /* TeamsViewController.swift in Sources */,
+				05383EC320252E8900E5D467 /* PlayersCell.swift in Sources */,
+				055D44332025F5D700D6CBF7 /* Activity Indicator.swift in Sources */,
+				055D44372025F84500D6CBF7 /* Utils.swift in Sources */,
+				05383EBC202521A700E5D467 /* RealmPlayerModel.swift in Sources */,
+				053230012023DC3100B85841 /* SVGToPNGConverter.swift in Sources */,
+				05322FE32023948500B85841 /* AppDelegate.swift in Sources */,
+				05383EBE202525A400E5D467 /* RealmHelper.swift in Sources */,
+				05383EC120252E3600E5D467 /* TeamsCell.swift in Sources */,
+				05383EBA2025216200E5D467 /* RealmTeamModel.swift in Sources */,
+				05383EB720250B1D00E5D467 /* PlayersModel.swift in Sources */,
+				05322FF5202394F900B85841 /* PlayersViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05322FE62023948500B85841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05322FE72023948500B85841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05322FEB2023948500B85841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05322FEC2023948500B85841 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05322FEF2023948500B85841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05322FF02023948500B85841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05322FF22023948500B85841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE86AE559EE68D563215D7F1 /* Pods-BundesligaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJ4S466K67;
+				INFOPLIST_FILE = BundesligaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rami.BundesligaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05322FF32023948500B85841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A532E48975C813AC8EC81007 /* Pods-BundesligaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJ4S466K67;
+				INFOPLIST_FILE = BundesligaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rami.BundesligaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05322FDA2023948500B85841 /* Build configuration list for PBXProject "BundesligaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05322FEF2023948500B85841 /* Debug */,
+				05322FF02023948500B85841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05322FF12023948500B85841 /* Build configuration list for PBXNativeTarget "BundesligaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05322FF22023948500B85841 /* Debug */,
+				05322FF32023948500B85841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05322FD72023948500B85841 /* Project object */;
+}
